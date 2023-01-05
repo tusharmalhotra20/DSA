@@ -38,7 +38,7 @@
 
 19. A program to display ASCII code of character and character corresponding to ASCII code
 
-0. A program to print ASCII code for digit between 0 to 9 and backspace.
+20. A program to print ASCII code for digit between 0 to 9 and backspace.
 
 21. A program to accept a character between 'a' to 'j' and print next four character.
 
@@ -49,32 +49,32 @@
 24. A program to input three integer and print the largest of three using conditional operator
 
 25. A program to input choice (1 or 2). if choice is 1, print the area of circle
-otherwise print the perimeter of circle. accept the radius of circle from user {use pi = 3.141}
+    otherwise print the perimeter of circle. accept the radius of circle from user {use pi = 3.141}
 
 26. A program to input principle amount and time. if time is more than 10 years, calculate simple interest with rate 8%.
-otherwise calculate it with rate 12% per annum
+    otherwise calculate it with rate 12% per annum
 
 27. A program that checks for experienced or not and input the age of a person.
-The salary of the person should be 6000, if "The person is experinced and his age is more than 35"-
-Otherwise The salary should be 4800 if "The person is experienced and his age is more than 28 but less than or equal to 35. Otherwise The salary for experienced person should be 3000 and for inexperienced the salary should be 2000
+    The salary of the person should be 6000, if "The person is experinced and his age is more than 35"-
+    Otherwise The salary should be 4800 if "The person is experienced and his age is more than 28 but less than or equal to 35. Otherwise The salary for experienced person should be 3000 and for inexperienced the salary should be 2000
 
 28. A program to accept three integers and print the largest of three, using if statement only.
 
 29. A program to create the equivalent of a four-functioned calculator. The program requires
-the user to enter two numbers and an operator. It then carries out the specified arithmetical
-operation: (+,-,\*,/) of the two numbers and display the result
+    the user to enter two numbers and an operator. It then carries out the specified arithmetical
+    operation: (+,-,\*,/) of the two numbers and display the result
 
 30. Temprature-conversion program that gives the user the option of converting fahrenheit to celcius or celcius to fahrenheit and
-depending upon the user choice carries out the conversion (by using if-else statement)
+    depending upon the user choice carries out the conversion (by using if-else statement)
 
 31. A program to read coordinates of two points and calculate the distance between them as per following formula
 
 32. A program to input a character and to print whether a given character is an
-alphabet, a digit or any other character.
+    alphabet, a digit or any other character.
 
 33. A program to calculate and print roots of a quadratic equation ax^2+bx+c=0 (a!=0)
 
 34. A program to input number of week's day (1-7) and translate to its equivalent name of the day
-of the week (e.g. 1 to Sunday, 2 to Monday...7 to Saturday).
+    of the week (e.g. 1 to Sunday, 2 to Monday...7 to Saturday).
 
 35. A program to calculate area of A CIRCLE, A RECTANGLE, A TRIANGLE depending upon user's choice.

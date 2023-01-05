@@ -1,4 +1,4 @@
-/*A program to calculate area of a CIRCLE,a RECTANGLE, a TRIANGLE depending uopn user's choice. */
+/*A program to calculate area of a CIRCLE, a RECTANGLE, a TRIANGLE depending uopn user's choice. */
 
 #include <iostream>
 int main()
