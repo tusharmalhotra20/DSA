@@ -1,29 +1,34 @@
-/*A program to compute the area and perimeter of a square.*/
+#include <iostream>
 
-#include<iostream.h>
-#include<conio.h>
-void main()
+using namespace std;
+
+int add(int a, int b)
 {
- clrscr();
- float s ;
- float area(float) ;
- float peri(float) ;
-
- cout<<"\nEnter side of square:\t" ;
- cin>>s ;
-
- cout<<"\nArea of square:\t"<<area(s) ;
- cout<<"\nPerimeter of square:\t"<<peri(s) ;
-
- getche();
+    return a + b;
+}
+int subtract(int a, int b)
+{
+    return a - b;
+}
+int product(int a, int b)
+{
+    return a * b;
+}
+int division(int a, int b)
+{
+    return a / b;
 }
 
-float area(float s)
+int main()
 {
- return(s*s) ;
-}
- 
-float peri(float s)
-{
- return(4*s) ;
+    int num1{}, num2{};
+
+    cin >> num1 >> num2;
+
+    cout << add(num1, num2) << endl;
+    cout << subtract(num1, num2) << endl;
+    cout << product(num1, num2) << endl;
+    cout << division(num1, num2) << endl;
+
+    return 0;
 }
