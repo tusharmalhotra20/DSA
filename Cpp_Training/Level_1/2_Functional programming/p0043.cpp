@@ -1,9 +1,8 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
-int count_digits(long int n)
+int count_digits(int n)
 {
     int count{};
     while (n)
@@ -13,42 +12,28 @@ int count_digits(long int n)
     }
     return count;
 }
-int rotated(long int n, int k, int count)
-{
-    while (k)
-    {
-        int last = n % 10;
-        n += last * pow(10, count - 1);
-        n /= 10;
-        k -= 1;
-    }
 
-    return n;
-}
-void rotate(long int n, int k)
+void rotate(int num, int k)
 {
-    if (k == 0)
-    { // no need to rotate
-        cout << n << endl;
-        return;
-    }
-    int count = count_digits(n);
-    if (k > 0)
+    int digits = count_digits(num);
+    int mul = 1, div = 1;
+    int res = 0;
+    k = ((k % digits) + digits) % digits;
+
+    for (int i = 1; i <= digits; i++)
     {
-        int rotations{k};
-        cout << rotated(n, rotations, count) << endl;
+        if (i <= k)
+            div *= 10;
+        else
+            mul *= 10;
     }
-    if (k < 0)
-    {
-        int rotations{k - count};
-        cout << rotated(n, rotations, count) << endl;
-    }
+    res = ((num % div) * mul) + num / div;
+    cout << res << endl;
 }
 
 int main()
 {
-    long int num{};
-    int rotation{};
+    int num{}, rotation{};
     cin >> num >> rotation;
 
     rotate(num, rotation);

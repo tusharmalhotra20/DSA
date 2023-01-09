@@ -27,7 +27,7 @@ p       d
 */
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 using namespace std;
 
 void find_inverse(long int num)
