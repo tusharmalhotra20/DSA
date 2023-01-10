@@ -1,3 +1,11 @@
+/*
+    WAF that takes two floating number and an operator as input and be able to perform four basic functions of calculations- Addition, Subtraction, Multiplication & Division.
+
+    Input: 5 * 63
+    Output: 315
+    TC: O(1)
+*/
+
 #include <iostream>
 
 using namespace std;

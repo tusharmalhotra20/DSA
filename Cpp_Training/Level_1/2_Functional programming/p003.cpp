@@ -1,8 +1,18 @@
-/*A program to find area & perimeter of shapes-
+/*
+    Write functions to find area & perimeter of the following shapes-
     1. Square
     2. Rectangle
     3. Triangle
     3. Circle
+
+    Input: dimensions of shape, a character denoting area- 'a' or perimeter- 'p'.
+    For e.g
+    square(side, 'a')       // it returns area of square.
+    square(side, 'p')       // it returns perimeter of square.
+
+    Output: required area or perimeter.
+
+    TC: O(1)
 .*/
 
 #include <iostream>

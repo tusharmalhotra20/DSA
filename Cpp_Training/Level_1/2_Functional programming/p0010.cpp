@@ -1,33 +1,38 @@
-/*A program to display ASCII code of character and character corresponding to ASCII code*/
+/*
+    Reverse A Number
+        1. You've to display the digits of a number in reverse.
+        2. Take as input "n", the number for which digits have to be display in reverse.
+        3. Print the digits of the number line-wise, but in reverse order.
 
-#include<iostream.h>
-#include<conio.h>
-void main()
+    TC: O(n)
+*/
+
+#include <iostream>
+using namespace std;
+
+void number_reversed(long int num)
 {
- clrscr();
- int i ;
- char ch ;
- void change(char, int) ;
+    int rev_digit{}, temp{num};
 
- cout<<"\nEnter any character:\t" ;
- cin>>ch ;
- cout<<"Enter ASCII code for any character:\t" ;
- cin>>i   ;
+    while (temp)
+    {
+        // At each iteration, taking out last digit from original number
+        // and increasing its place value by 10 in next iteration. 
+        rev_digit = (rev_digit * 10) + (temp % 10);
 
- change(ch, i) ;
+        // printing in reverse order
+        cout << temp % 10 << endl;
 
- getche();
-
+        // reducing the size of num
+        temp /= 10;
+    }
 }
-void change(char c, int i)
+
+int main(int argc, char **argv)
 {
- int j ;
- char hc ;
+    long int num{};
+    cin >> num;
 
- j = c ;
- hc = i ;
-
- cout<<"\n\nASCII code of input character:\t"<<j ;
- cout<<"\nCharacter corresponding to input ASCII code:\t"<<hc ;
-
+    number_reversed(num);
+    return 0;
 }

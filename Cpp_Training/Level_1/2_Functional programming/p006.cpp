@@ -1,13 +1,15 @@
 /*
-    Prime number: A number which is not composed of any other number is called prime no.
-    OR A number which has no factors other than 1 & itself.
-    for e.g. 2,3,5,7...
-
     Print All Primes Till N
         1. You've to print all prime numbers between a range.
         2. Take as input "low", the lower limit of range.
         3. Take as input "high", the higher limit of range.
         4. For the range print all the primes numbers between low and high (both included).
+
+    TC: O(n*√n)
+
+    Prime number: A number which is not composed of any other number is called prime no.
+    OR A number which has no factors other than 1 & itself.
+    for e.g. 2,3,5,7...
 */
 #include <iostream>
 using namespace std;

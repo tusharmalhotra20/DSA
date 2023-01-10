@@ -1,39 +1,38 @@
-/*Enter two numbers and swap both the numbers without using empty variable.(It is a call by value method)*/
+/*
+    Digits Of A Number
+        1. You've to display the digits of a number.
+        2. Take as input "n", the number for which digits have to be displayed.
+        3. Print the digits of the number line-wise.
+    
+    TC: O(n)
+*/
 
-#include<iostream.h>
-#include<conio.h>
-void main()
+#include <iostream>
+using namespace std;
+
+void print_digits(long long int num)
 {
- int a,b ;
- void swap(int, int) ;
- clrscr();
+    long long int temp{num}, mul{1};
 
- cout<<"\nEnter 1st number:\t";
- cin>>a ;
- cout<<"\nEnter 2nd number:\t" ;
- cin>>b ;
-
- swap(a,b) ;
-
- getche();
+    while (temp)
+    {
+        temp /= 10;
+        mul *= 10;
+    }
+    mul /= 10;
+    temp = num;
+    while (mul != 0)
+    {
+        cout << temp / mul << endl;
+        temp %= mul;
+        mul /= 10;
+    }
 }
 
-void swap(int x, int y)
+int main()
 {
- x = x + y ;
- y = x - y ;
- x = x - y ;
-
- cout<<"\nAfter swaping 1st number is:\t"<<x ;
- cout<<"\nAfter swaping 2nd number is:\t"<<y ;
-
+    long long int num{};
+    cin >> num;
+    print_digits(num);
+    return 0;
 }
-
-
-
-
-
-
-
-
-

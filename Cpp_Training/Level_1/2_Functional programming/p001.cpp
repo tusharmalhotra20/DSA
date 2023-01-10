@@ -1,3 +1,11 @@
+/*
+    WAF that takes your name as input and output a greeting message to functional programming.
+
+    Input: "Tushar"
+    Output: Hello Tushar, Welcome to Functional programming
+    TC: O(1)
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;

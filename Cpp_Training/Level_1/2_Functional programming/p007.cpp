@@ -1,10 +1,12 @@
 /*
-    Fibonacci sequence: It is a sequence in which each number is the sum of the two preceding ones. The sequence commonly starts from 0 and 1.
-
     Print Fibonacci Numbers Till N
         1. You've to print first n fibonacci numbers.
         2. Take as input "n", the count of fibonacci numbers to print.
         3. Print first n fibonacci numbers.
+    
+    TC: O(n)
+
+    Fibonacci sequence: It is a sequence in which each number is the sum of the two preceding ones. The sequence commonly starts from 0 and 1.
 */
 
 #include <iostream>
