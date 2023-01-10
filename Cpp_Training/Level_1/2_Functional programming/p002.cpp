@@ -2,33 +2,34 @@
 
 using namespace std;
 
-int add(int a, int b)
+float calc(float a, char op, float b)
 {
-    return a + b;
+    switch (op)
+    {
+    case '+':
+        return a + b;
+    case '-':
+        return a - b;
+    case '*':
+        return a * b;
+    case '/':
+        return a / b;
+    default:
+        cout << "invalid operation" << endl;
+        return -1;
+    }
 }
-int subtract(int a, int b)
+void input(float &num1, char &op, float &num2)
 {
-    return a - b;
+    cin >> num1 >> op >> num2;
 }
-int product(int a, int b)
-{
-    return a * b;
-}
-int division(int a, int b)
-{
-    return a / b;
-}
-
 int main()
 {
-    int num1{}, num2{};
+    float num1{}, num2{};
+    char op{};
 
-    cin >> num1 >> num2;
-
-    cout << add(num1, num2) << endl;
-    cout << subtract(num1, num2) << endl;
-    cout << product(num1, num2) << endl;
-    cout << division(num1, num2) << endl;
+    input(num1, op, num2);
+    cout << calc(num1, op, num2) << endl;
 
     return 0;
 }
