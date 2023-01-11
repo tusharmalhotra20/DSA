@@ -1,3 +1,5 @@
+## Questions:
+
 1. WAF that takes your name as input and output a greeting message to functional programming.
 
 2. WAF that takes two floating number and an operator as input and be able to perform four basic functions of calculations- Addition, Subtraction, Multiplication & Division.
