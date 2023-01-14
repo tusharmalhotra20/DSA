@@ -5,7 +5,7 @@ using namespace std;
 
 void toggle(string &str)
 {
-    if (str == "")
+    if (str.empty())
         return;
 
     for (auto &ch : str)
@@ -18,7 +18,7 @@ void toggle(string &str)
 }
 string togglew(string str)
 {
-    if (str == "")
+    if (str.empty())
         return "";
 
     for (auto &ch : str)

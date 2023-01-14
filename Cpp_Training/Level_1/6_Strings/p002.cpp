@@ -4,14 +4,14 @@
 
 using namespace std;
 
-void vc_count(string s)
+void vc_count(string str)
 {
-    if (s == "")
+    if (str.empty())
         return;
 
-    transform(s.begin(), s.end(), s.begin(), ::tolower);
+    transform(str.begin(), str.end(), str.begin(), ::tolower);
     int vowel_count{};
-    for (auto ch : s)
+    for (auto ch : str)
     {
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
             vowel_count += 1;
@@ -20,7 +20,7 @@ void vc_count(string s)
     // number of vowels
     cout << vowel_count << endl;
     // number of consonants
-    cout << s.length() - vowel_count << endl;
+    cout << str.length() - vowel_count << endl;
 }
 
 int main()

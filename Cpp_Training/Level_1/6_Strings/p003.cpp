@@ -5,7 +5,7 @@ using namespace std;
 
 void to_upper(string &str)
 {
-    if (str == "")
+    if (str.empty())
         return;
 
     for (auto &ch : str)
@@ -17,7 +17,7 @@ void to_upper(string &str)
 
 void to_lower(string &str)
 {
-    if (str == "")
+    if (str.empty())
         return;
 
     for (auto &ch : str)
@@ -29,7 +29,7 @@ void to_lower(string &str)
 
 string to_upperw(string str)
 {
-    if (str == "")
+    if (str.empty())
         return "";
 
     for (auto &ch : str)
@@ -42,7 +42,7 @@ string to_upperw(string str)
 
 string to_lowerw(string str)
 {
-    if (str == "")
+    if (str.empty())
         return "";
 
     for (auto &ch : str)

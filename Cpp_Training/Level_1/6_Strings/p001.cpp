@@ -6,13 +6,13 @@
 
 using namespace std;
 
-int length(string s)
+int length(string str)
 {
-    if (s == "")
-        return '\0';
+    if (str.empty())
+        return 0;
 
     int count{};
-    for (auto i : s)
+    for (auto i : str)
         count += 1;
 
     return count;
