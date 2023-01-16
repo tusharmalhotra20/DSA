@@ -1,3 +1,16 @@
+/*
+    1. You are given a string.
+    2. You have to change it into-
+        a. upper case
+            - changing original string
+            - without changing original string
+        b. lower case
+            - changing original string
+            - without changing original string
+    
+    For e.g. i/p: tushar
+             o/p: TUSHAR
+*/
 #include <iostream>
 #include <string>
 

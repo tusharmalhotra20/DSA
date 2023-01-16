@@ -1,3 +1,16 @@
+/*
+        1. You are given a string. 
+        2. You have to find duplicate characters in the string.
+        Methods:
+                a. using loops
+                b. using hash table
+                c. using bit method
+        For e.g.
+            i/p: maximilian
+            o/p: a 2
+                 i 3
+                 m 2
+*/
 #include <iostream>
 #include <string>
 #include <vector>
@@ -63,7 +76,7 @@ int main()
     getline(cin, str);
 
     // find_duplicatesl(str);
-    // find_duplicatesht(str);
-    find_duplicatesb(str);
+    find_duplicatesht(str);
+    // find_duplicatesb(str);
     return 0;
 }

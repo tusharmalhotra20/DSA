@@ -1,3 +1,11 @@
+/*
+     1. You are given two strings.
+     2. You have to compare them, whether they are equal or not.  
+     For e.g.
+        i/p: calendar
+             Calendar
+        o/p: false
+*/
 #include <iostream>
 #include <string>
 

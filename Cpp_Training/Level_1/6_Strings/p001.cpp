@@ -1,5 +1,8 @@
 /*
-    WAF that returns the length of a string.
+     1. You are given a string.
+     2. You have to write a function that returns its length.
+        For e.g.    i/p: tushar
+                    o/p: 6
 */
 #include <iostream>
 #include <string>
@@ -25,6 +28,7 @@ int main()
 
     // my-function
     cout << length(str) << endl;
+    
     // in-built method
     cout << str.length() << endl;
 

@@ -1,3 +1,11 @@
+/*
+    WAf that checks whether the input string is an anagram or not.
+    For e.g.
+        i/p: medical decimal
+        o/p: true
+        i/p: street smart
+        o/p: false
+*/
 #include <iostream>
 #include <string>
 #include <vector>
@@ -8,6 +16,7 @@ bool anagram(string str, string line)
 {
     if (str.empty() || line.empty())
         return false;
+
     if (str.length() != line.length())
         return false;
 

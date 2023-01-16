@@ -1,3 +1,12 @@
+/*
+    1. You are given a string.
+    2. You have to toggle its characters case-
+        a. changing original string
+        b. without changing original string
+    For e.g. 
+            i/p: tOGgLe 
+            o/p: TogGlE
+*/
 #include <iostream>
 #include <string>
 

@@ -1,3 +1,12 @@
+/*
+    1. You are given a string.
+    2. You have to reverse that string using-
+        a. auxiliary string
+        b. without auxiliary string
+    For e.g.
+        i/p:  school
+        o/p:  loohcs  
+*/
 #include <iostream>
 #include <string>
 
@@ -18,7 +27,7 @@ void reverse(string &str)
 {
     if (str.empty())
         return;
-        
+
     for (int i = 0, j = str.length() - 1; i <= j; i++, j--)
     {
         char temp = str.at(i);
