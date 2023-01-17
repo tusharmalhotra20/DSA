@@ -28,10 +28,9 @@ void diagonalTraversal(vector<vector<int>> matrix)
 
 int main()
 {
-    cout << boolalpha;
-    int n;
-    cin >> n;
-    vector<vector<int>> matrix(n, vector<int>(n));
+    int num{};
+    cin >> num;
+    vector<vector<int>> matrix(num, vector<int>(num));
     input(matrix);
     diagonalTraversal(matrix);
 
