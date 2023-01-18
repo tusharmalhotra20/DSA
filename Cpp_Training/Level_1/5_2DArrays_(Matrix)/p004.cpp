@@ -1,4 +1,4 @@
-/* sum of elements row-wise */
+/* sum of elements row-wise & column-wise*/
 
 #include <iostream>
 #include <vector>
@@ -11,12 +11,10 @@ int row_sum(const vector<vector<int>> A)
 
     for (int row = 0; row < A.size(); row++)
     {
-
         for (int col = 0; col < A[row].size(); col++)
             sum += A[row][col];
         cout << row << ":\t" << sum << endl;
     }
-
     return sum;
 }
 
@@ -30,15 +28,16 @@ int col_sum(const vector<vector<int>> A)
             sum += A[row][col];
         cout << col << ":\t" << sum << endl;
     }
-
     return sum;
 }
+
 void input(vector<vector<int>> &A)
 {
     for (int row = 0; row < A.size(); row++)
         for (int col = 0; col < A[row].size(); col++)
             cin >> A[row][col];
 }
+
 int main()
 {
     int r{}, c{};
