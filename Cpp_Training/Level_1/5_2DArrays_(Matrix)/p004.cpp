@@ -1,4 +1,25 @@
-/* sum of elements row-wise & column-wise*/
+/*
+    1. You have to take input for row & column.
+    2. You have to take row x column elements as input for matrix .
+    3. You have to write three functions that return the sum of elements:
+        a. row-wise
+        b. column-wise
+    4. Also you have to print the sum of of each row (and column) with respective row number (column number).
+    For e.g.
+        i/p: 2 4
+
+             2 3 4 6
+             1 0 2 9
+
+        o/p: 0:      15
+             1:      27
+             27
+             0:      3
+             1:      6
+             2:      12
+             3:      27
+             27
+*/
 
 #include <iostream>
 #include <vector>

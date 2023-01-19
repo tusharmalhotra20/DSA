@@ -1,8 +1,23 @@
 /*
-    Different ways of traversing a matrix:
-        -wave
-        -spiral
-        -diagonal
+    1. You have to take input for row & column.
+    2. You have to take row x column elements as input for matrix . 
+    3. You have to write functions for different ways of traversing a matrix:
+            a. wave traversal
+            b. spiral traversal
+            c. diagonal traversal
+
+    For e.g.
+        i/p: 5 5 
+            10 11 12 13 14 
+            15 16 17 18 19 
+            20 21 22 23 24 
+            25 26 27 28 29 
+            30 31 32 33 34 
+
+        o/p:
+            10 15 20 25 30 31 26 21 16 11 12 17 22 27 32 33 28 23 18 13 14 19 24 29 34 
+            10 15 20 25 30 31 32 33 34 29 24 19 14 13 12 11 16 21 26 27 28 23 18 17 22 
+            10 16 22 28 34 11 17 23 29 12 18 24 13 19 14
 */
 #include <iostream>
 #include <vector>
@@ -94,14 +109,15 @@ int main()
     input(A);
     cout << endl;
 
-    // wave_traverse(A);
-    // cout << endl;
+    wave_traverse(A);
+    cout << endl;
 
-    // spiral_traverse(A);
-    // cout << endl;
+    spiral_traverse(A);
+    cout << endl;
 
-    // diagonal_traverse(A);
-    // cout << endl;
+    // only possible for square matrices.
+    diagonal_traverse(A);
+    cout << endl;
 
     return 0;
 }
