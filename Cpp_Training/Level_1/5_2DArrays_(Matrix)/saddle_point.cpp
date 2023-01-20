@@ -24,9 +24,7 @@ int saddlePoint(vector<vector<int>> matrix)
         for (int j = 0; j < matrix.size(); j++)
         {
             if (matrix[i][j] < matrix[i][svj])
-            {
                 svj = j; // The value which is found to be smallest in its row ; also assumed to be greatest in its column.
-            }
         }
         bool flag = true;
         for (int k = 0; k < matrix.size(); k++)
