@@ -24,17 +24,13 @@ vector<string> get_stair_paths(int n)
     vector<string> paths;
 
     for (auto path : paths1)
-    {
         paths.push_back("1" + path);
-    }
+
     for (auto path : paths2)
-    {
         paths.push_back("2" + path);
-    }
+
     for (auto path : paths3)
-    {
         paths.push_back("3" + path);
-    }
 
     return paths;
 }
