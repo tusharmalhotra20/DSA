@@ -1,56 +1,51 @@
 #include <iostream>
-#include <vector>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
-vector<int> nextGreaterElementIdx(vector<int> arr)
+vector<int> nextGreaterElementIdx(vector<int> vec)
 {
     stack<int> st;
-    vector<int> nextGreaterIdx(arr.size(), 0);
+    vector<int> ans(vec.size(), 0);
 
-    st.push(arr.size() - 1);
-    nextGreaterIdx[arr.size() - 1] = arr.size();
+    ans[vec.size() - 1] = ans.size();
+    st.push(vec.size() - 1);
 
-    for (int i = arr.size() - 2; i >= 0; i--)
+    for (int i = vec.size() - 2; i >= 0; i--)
     {
-        while (arr[i] >= arr[st.top()] && !st.empty())
+        while (!st.empty() and vec[i] >= vec[st.top()])
             st.pop();
 
         if (st.empty())
-            nextGreaterIdx[i] = arr.size();
+            ans[i] = vec.size();
         else
-            nextGreaterIdx[i] = st.top();
+            ans[i] = st.top();
 
         st.push(i);
     }
 
-    return nextGreaterIdx;
+    return ans;
 }
-
-vector<int> windowsMax(vector<int> arr, int winSize)
+vector<int> windowMax(vector<int> vec, int winSize)
 {
-    vector<int> next = nextGreaterElementIdx(arr);
-    vector<int> result(arr.size(), 0);
+
+    vector<int> next = nextGreaterElementIdx(vec);
+    vector<int> result(vec.size() - winSize + 1);
 
     int j{0};
-    for (int i = 0; i < arr.size(); i++)
+    for (int i = 0; i < vec.size(); i++)
     {
         if (j < i)
             j = i;
 
-        while (next[j] < i + winSize)
+        while (next[j] < (i + winSize))
             j = next[j];
 
-        result.push_back(arr[j]);
+        result[i] = vec[j];
     }
-    return result;
-}
 
-void input(vector<int> &arr)
-{
-    for (int i = 0; i < arr.size(); i++)
-        cin >> arr[i];
+    return result;
 }
 
 int main()
@@ -58,13 +53,14 @@ int main()
     int size{0};
     cin >> size;
 
-    vector<int> arr(size, 0);
-    input(arr);
+    vector<int> vec(size, 0);
+    for (int i = 0; i < vec.size(); i++)
+        cin >> vec[i];
 
     int winSize{0};
     cin >> winSize;
 
-    vector<int> result = windowsMax(arr, winSize);
+        vector<int> result = windowMax(vec, winSize);
 
     for (auto ele : result)
         cout << ele << " ";

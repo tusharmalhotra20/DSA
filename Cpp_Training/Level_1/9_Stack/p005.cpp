@@ -47,6 +47,11 @@ int largestAreaHistogram(vector<int> heights)
 {
     vector<int> next = nextSmallerElementIdx(heights);
 
+    cout << endl;
+
+    for (auto ele : next)
+        cout << ele<<" ";
+
     vector<int> prev = prevSmallerElementIdx(heights);
 
     int maxArea{INT32_MIN};
@@ -73,7 +78,7 @@ int main()
 
     int result = largestAreaHistogram(heights);
 
-    cout << result << endl;
+    // cout << result << endl;
 
     return 0;
 }
