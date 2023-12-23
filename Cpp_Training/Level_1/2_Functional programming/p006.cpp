@@ -19,6 +19,9 @@ void all_prime(int l, int h)
     for (int num = l; num <= h; num++)
     {
         bool prime{true};
+        if(num <= 1)
+            prime = false;
+        
         for (int div = 2; div * div <= num; div++)
         {
             if (num % div == 0)
